@@ -3,25 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mechanical Engineering Notes</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Ahmet Tarhan - Mechanical Engineer & Scientific Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Mechanical Engineering Notes</h1>
-        <nav>
-            <ul>
-                <li><a href="notes/mechanical_vibrations/">Mechanical Vibrations</a></li>
-                <li><a href="notes/thermodynamics/index.html">Thermodynamics</a></li>
-                <li><a href="notes/fluid_mechanics/index.html">Fluid Mechanics</a></li>
+    <header id="header">
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><a href="#hero">Ahmet Tarhan</a></h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+            </div>
         </nav>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Ahmet Tarhan</h2>
+                <p class="lead">Mechanical Engineer and Scientific Software Developer</p>
+                <div class="contact-info-hero">
+                    <span>Brussels, Belgium</span> |
+                    <span>+32 4755313953</span> |
+                    <span><a href="mailto:ahmettarhn@gmail.com">ahmettarhn@gmail.com</a></span>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-        <p>This website contains my personal notes on various mechanical engineering topics.</p>
-        </main>
-    <footer>
-        <p>&copy; 2025 Rizoit</p>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <hr>
+            <p>A versatile and results-oriented CAE Engineer and Scientific Software Developer with a comprehensive theoretical foundation in the structural and dynamic analysis of mechanical systems. Possesses demonstrated expertise across diverse industries, showcasing strong adaptability and a continuous drive to learn and embrace new challenges. Proven ability in developing engineering software, conducting complex simulations, and optimizing mechanical designs, consistently delivering impactful solutions and quantifiable improvements.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="content-section bg-light">
+        <div class="container">
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills-grid">
+                <div>
+                    <h3>FEM Modeling & Simulation</h3>
+                    <p>Ansys Workbench, Abaqus, Nastran, HyperMesh/HyperWorks</p>
+                </div>
+                <div>
+                    <h3>System Dynamics Modeling & Simulation</h3>
+                    <p>MSC ADAMS, PyDy, Matlab/Simulink</p>
+                </div>
+                <div>
+                    <h3>Computer-Aided Design (CAD)</h3>
+                    <p>SolidWorks, SpaceClaim</p>
+                </div>
+                <div>
+                    <h3>Programming Languages</h3>
+                    <p>Python, C#, Matlab</p>
+                </div>
+                <div>
+                    <h3>Data Transformation and Visualization</h3>
+                    <p>Power BI, Pandas, Numpy, Seaborn, Matplotlib</p>
+                </div>
+                <div>
+                    <h3>Version Tracking & Documentation</h3>
+                    <p>Git, GitLab, LaTeX</p>
+                </div>
+            </div>
+            <div class="expertise">
+                <h3>Areas of Expertise</h3>
+                <p>Dynamics of Machinery, Mechanical Vibrations, Vehicle Dynamics, Finite Element Method, Kinematic and Synthesis of Mechanisms, Linear Elastic Fracture Mechanics, Modelling, Simulation, Thermo-Mechanical Analysis, Statistical Modeling.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="content-section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <hr>
+            <article class="job">
+                <h3>Researcher</h3>
+                <p class="company-date">Royal Military Academy | Brussels, Belgium | <em>02/2025 - Current</em></p>
+                <ul>
+                    <li>Developing calculation methods for off-road vehicles.</li>
+                </ul>
+            </article>
+            <article class="job">
+                <h3>Scientific Software Developer</h3>
+                <p class="company-date">TUSAŞ ENGINE INDUSTRIES (TEI) | Istanbul, Turkey | <em>04/2022 - 12/2023</em></p>
+                <ul>
+                    <li>Developed engineering software for aircraft engine design, involving literature research, implementation and comparison of alternative solutions, and transformation of chosen methods into user-friendly software.</li>
+                    <li><strong>Crack Propagation Software (Python):</strong> Developed software to solve 2D crack propagation problems in different geometries.</li>
+                    <li><strong>Weld Stress Concentration Factor Tool (C# & Ansys APDL):</strong> Created a tool to calculate stress concentrations in welded regions. Automated geometry creation (NX) and finite element analysis (Ansys APDL) based on user input via a C# interface.</li>
+                    <li><strong>Hole Stress Concentration Factor Tool (C# & Ansys APDL):</strong> Developed software to compute stress concentrations around irregularities like holes, with automated geometry creation and FEA (Ansys APDL) from a C# interface. This tool also offered an analytic strength methods option using HSB, Bruhn, ESDU, Roark & Young for simple geometries, enhancing intuition for hand calculations.</li>
+                    <li>Frequently created parametric Workbench models to facilitate Design of Experiment (DoE) studies for engineering methods requiring extensive finite element analysis.</li>
+                </ul>
+            </article>
+            <article class="job">
+                <h3>Lead CAE Engineer</h3>
+                <p class="company-date">TAAC AEROSPACE TECHNOLOGIES | Istanbul, Turkey | <em>07/2021 - 04/2022</em></p>
+                <ul>
+                    <li><strong>Vibrational Durability Analysis for Aircraft Actuator Test Rig:</strong> Examined the durability of Turkey's most advanced Iron Bird Test System and the effects of actuator-induced vibrations using Ansys, ensuring the safety and reliability of the flight control system testing platform. (<a href="https://taac.com.tr/en/iron-bird-test-systems" target="_blank" rel="noopener noreferrer">Project Link</a>)</li>
+                    <li><strong>Shock and Vibration Analysis for Composite Tactical Mast System:</strong> Determined dynamic loads and conducted structural, vibration, and shock analyses (per military standards) for a telescopic vehicle-mounted mast system, modeling composite material areas. (<a href="https://www.altinaysavunma.com/en/products/mast-systems" target="_blank" rel="noopener noreferrer">Project Link</a>)</li>
+                    <li><strong>Static Analysis for Inclination Test Rig:</strong> Optimized a two-axis payload inclination test rig by determining loading conditions using ADAMS. Parametrically created the ADAMS model, leading to a 30% lighter design and a 25% reduction in actuator capacity.</li>
+                    <li><strong>Aircraft Capture and Security System Development Project:</strong> Contributed to a system for capturing, securing, and transferring helicopters on military ships.
+                        <ul>
+                            <li>Developed methodologies for obtaining dynamic forces by creating a multibody model of the helicopter and ship's deck. Conducted 32,798 ADAMS analyses with varying parameters (wave conditions, ship orientation, wind, helicopter position) using a Python script to identify worst-case loading conditions.</li>
+                            <li>Performed 2 & 3 point kinematic synthesis for four-bar mechanisms within the structure.</li>
+                            <li>Conducted structural strength analyses, including shock and vibration analyses according to military standards, after determining loads. (<a href="https://www.altinaysavunma.com/en/media/news/helicopter-capture-and-transfer-system-developed-overcome-embargo" target="_blank" rel="noopener noreferrer">Project Link</a>)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article class="job">
+                <h3>CAE Engineer</h3>
+                <p class="company-date">BMC POWER | Istanbul, Turkey | <em>09/2019 - 07/2021</em></p>
+                <ul>
+                    <li>Contributed to Inline 6, V8, and V12 Diesel Engine projects for defense and commercial sectors. (<a href="https://www.bmcpower.com.tr/" target="_blank" rel="noopener noreferrer">Company Link</a>)</li>
+                    <li>Performed finite element analyses using ABAQUS and service life calculations using FEMFAT.</li>
+                    <li><strong>Exhaust Manifold Thermal Fatigue Analysis:</strong> Conducted service life calculations under bolt preloading and temperature-induced loads. Included detailed gasket modeling to assess leakage risk due to deformations.</li>
+                    <li><strong>Engine Head and Block Durability Analysis:</strong> Performed High Cycle Fatigue (HCF) and vibrational durability analyses.</li>
+                </ul>
+            </article>
+            <article class="job">
+                <h3>Project Engineer</h3>
+                <p class="company-date">BIAS Engineering | Ankara, Turkey | <em>02/2016 - 09/2019</em></p>
+                <ul>
+                    <li>Managed MSC Adams software distribution, including technical inquiries, company training, consultancy, and custom model creation (sometimes automated).</li>
+                    <li><strong>Armored Vehicle Suspension Development Project (BMC 6x6):</strong> Conducted MBD and durability analysis for suspension integration. Built ADAMS/Car model, converted suspension components to flexible parts (ADAMS/Durability), and used ADAMS/Car Ride module with road data to model the vehicle with wheel displacement data, obtaining stress data for service life calculation. (<a href="https://en.wikipedia.org/wiki/BMC_Kirpi" target="_blank" rel="noopener noreferrer">Project Link</a>)</li>
+                    <li><strong>Travel Lock System for Self-Propelled Howitzer (FIRTINA-II):</strong> Developed a travel lock system to secure the howitzer barrel during transit. (Details in Projects Section) (<a href="https://www.defenceturkey.com/en/content/new-generation-firtina-ii-howitzers-delivered-to-the-turkish-armed-forces-4381" target="_blank" rel="noopener noreferrer">Project Link</a>)</li>
+                    <li><strong>Modeling and Usage Analysis of 8x8 Armored Vehicles (FNSS & ISUZU):</strong> Modeled 8x8 vehicles with independent suspensions and three-axle steering using ADAMS/Car, creating special suspension and steering templates. Conducted comprehensive maneuvering analyses.</li>
+                    <li>Provided MBD solutions (ADAMS) including pre-sales activities, consulting, and support.</li>
+                    <li>Delivered MSC ADAMS training to companies.</li>
+                    <li>Presented the MSC Software Portfolio at national events, congresses, conferences, and fairs.</li>
+                </ul>
+            </article>
+            <article class="job">
+                <h3>Project Engineer</h3>
+                <p class="company-date">SCIROBOT | Ankara, Turkey | <em>06/2015 - 01/2016</em></p>
+                <ul>
+                    <li>Led mechanical design, engineering analysis, and manufacturing processes for a social robot specifically designed for Alzheimer's patients. (Details in Projects Section)</li>
+                    <li>The project won the YFYI entrepreneurship contest (largest of its kind) in the pro-informatics category.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section bg-light">
+        <div class="container">
+            <h2>Key Projects & Software</h2>
+            <hr>
+            <article class="project-item">
+                <h4>Travel Lock System for Self-Propelled Howitzer (FIRTINA-II)</h4>
+                <p class="project-company">BIAS Engineering</p>
+                <ul>
+                    <li>Successfully developed a travel lock system to secure the howitzer barrel during transit, meeting complex operational requirements.</li>
+                    <li>Designed three interconnected mechanisms (locking, position changing, function mechanism) operable by a single actuator to achieve desired barrel movements and locking.</li>
+                    <li>Utilized ADAMS for multi-body dynamics modeling, crucial for motor sizing and mechanism optimization.</li>
+                    <li>Performed strength analyses using a NASTRAN finite element model to ensure structural integrity.</li>
+                    <li>Led the project from conceptual design through to production, assembly, and comprehensive testing, delivering a production-ready prototype.</li>
+                    <li>Ensured the system could hold the barrel against dynamic loads, release on command, allow barrel movement by positioning the lock horizontally, and automatically secure the barrel.</li>
+                </ul>
+            </article>
+            <article class="project-item">
+                <h4>Social Robot for Alzheimer's Patients</h4>
+                <p class="project-company">SCIROBOT</p>
+                <ul>
+                    <li>Led the complete mechanical design, engineering analysis, and manufacturing processes for an innovative social robot.</li>
+                    <li>This project was recognized as the winner of the prestigious YFYI entrepreneurship contest in the pro-informatics category, highlighting its novelty and potential impact.</li>
+                </ul>
+            </article>
+            <article class="project-item">
+                <h4>Engineering Software Suite for Aircraft Engine Design</h4>
+                <p class="project-company">TUSAŞ ENGINE INDUSTRIES (TEI)</p>
+                <ul>
+                    <li><strong>Crack Propagation Software (Python):</strong> Developed a tool for solving 2D crack propagation problems in various geometries.</li>
+                    <li><strong>Weld Stress Concentration Factor Tool (C# & Ansys APDL):</strong> Created an automated tool for calculating stress concentrations in welded joints, integrating NX for geometry and Ansys APDL for FEA via a C# interface.</li>
+                    <li><strong>Hole Stress Concentration Factor Tool (C# & Ansys APDL):</strong> Developed software for computing stress concentrations around holes, featuring automated FEA and an option for analytical strength calculations (HSB, Bruhn, ESDU, Roark & Young).</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="education" class="content-section">
+        <div class="container">
+            <h2>Education</h2>
+            <hr>
+            <article class="education-entry">
+                <h3>Master of Science (M.S.) in Mechanical Engineering (Vehicle Dynamics)</h3>
+                <p class="institution-date">Hacettepe University | Ankara, Turkey | <em>2017 - 2020</em></p>
+                <p><strong>Thesis:</strong> "Yaw Dynamics Control of a Three-Wheeled Hybrid Vehicle by Torque Vectoring."</p>
+                <ul>
+                    <li>Investigated lateral dynamics, modeling mechanical components (chassis, suspension, steering, wheels) with Adams/Car.</li>
+                    <li>Modeled power generation/transmission components (engine, electric motors, battery), energy management system (max battery strategy), speed controller, and yaw controller (LQR based) with MATLAB/Simulink.</li>
+                    <li>Conducted detailed co-simulation studies analyzing effects of vehicle speed, acceleration, battery level, friction, and torque transfer on lateral dynamics and yaw controller performance.</li>
+                </ul>
+                <p><strong>Relevant Elective Courses:</strong> Advanced Mechanical Vibration, Advanced Dynamics, Advanced State Space Control Theory, Simulation of Vehicle Dynamics (final project on inerters), Drive Assistance Systems (ABS, ESC, ACC).</p>
+                <p><strong>Extracurricular Activities:</strong> Conducted vehicle dynamics analyses for the university’s “Formula Student” team.</p>
+            </article>
+            <article class="education-entry">
+                <h3>Bachelor of Engineering (B.E.) in Mechanical Engineering</h3>
+                <p class="institution-date">Middle East Technical University (METU) | Ankara, Turkey | <em>2010 - 2015</em></p>
+                <p><strong>Final Project:</strong> Stabilizing handle for Parkinson's disease patients.</p>
+                <p><strong>Relevant Elective Courses:</strong> Automotive Engineering, Kinematic Synthesis of Mechanisms, Introduction to Finite Element Analysis, Dynamics of Machinery.</p>
+                <p><strong>Extracurricular Activities:</strong></p>
+                <ul>
+                    <li>Licensed athlete, assistant coach (2016-2019), and club president (2014-2015) of the METU Fencing Club (managing 50 active athletes).</li>
+                    <li>Developed social skills through volunteer club management.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section bg-dark">
+        <div class="container">
+            <h2>Contact</h2>
+            <hr>
+            <p>Feel free to reach out if you'd like to discuss potential opportunities or collaborations.</p>
+            <p>Email: <a href="mailto:ahmettarhn@gmail.com">ahmettarhn@gmail.com</a></p>
+            <p>Phone: +32 4755313953</p>
+            </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Ahmet Tarhan. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

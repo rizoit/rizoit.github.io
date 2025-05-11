@@ -1,0 +1,330 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* For smooth scrolling */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+#header {
+    background: #333;
+    color: #fff;
+    position: sticky; /* Sticky navbar */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#navbar .logo a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin: 0 0.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current { /* For potential JS active link styling */
+    color: #00aaff; /* Accent color */
+}
+
+/* Hero Section */
+.hero-section {
+    background: #555 url('https://via.placeholder.com/1500x600.png?text=Professional+Background') no-repeat center center/cover; /* Replace with an actual image if desired */
+    /* For a color gradient instead of image: */
+    /* background: linear-gradient(to right, #005aa7, #fffde4); */
+    color: #fff;
+    height: 60vh; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative; /* For potential overlay */
+}
+
+.hero-section::before { /* Optional overlay for better text readability if using a busy image */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-section .container {
+    position: relative; /* To ensure content is above overlay */
+    z-index: 1;
+}
+
+.hero-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.hero-section .contact-info-hero {
+    font-size: 1rem;
+}
+
+.hero-section .contact-info-hero a {
+    color: #fff;
+    text-decoration: none;
+}
+.hero-section .contact-info-hero a:hover {
+    text-decoration: underline;
+}
+
+
+/* General Content Section Styling */
+.content-section {
+    padding: 4rem 0;
+}
+
+.content-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.content-section hr {
+    width: 60px;
+    height: 3px;
+    background: #00aaff; /* Accent color */
+    border: 0;
+    margin: 0 auto 2.5rem auto;
+}
+
+.content-section p,
+.content-section ul {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.content-section ul {
+    list-style-position: inside;
+    padding-left: 1rem; /* Indent list items */
+}
+
+.content-section ul li ul { /* Nested lists */
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.content-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
+}
+
+/* Background Utility Classes */
+.bg-light {
+    background: #f9f9f9;
+    color: #333;
+}
+.bg-light h2 {
+    color: #333;
+}
+.bg-light p, .bg-light ul {
+    color: #555;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-dark h2, .bg-dark p, .bg-dark hr {
+    color: #fff;
+}
+.bg-dark hr {
+    background: #fff;
+}
+.bg-dark a {
+    color: #00aaff; /* Accent color for links on dark background */
+}
+
+/* Skills Section Specifics */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-grid div {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills-grid h3 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.expertise h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    color: #007bff;
+}
+
+/* Experience & Education & Projects Section Specifics */
+.job, .education-entry, .project-item {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #00aaff; /* Accent color */
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.bg-light .job, .bg-light .education-entry, .bg-light .project-item {
+    background: #fff; /* Ensure white background even if section is bg-light */
+}
+
+
+.job h3, .education-entry h3, .project-item h4 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0.25rem;
+    color: #333;
+}
+.project-item h4 {
+    font-size: 1.3rem;
+}
+
+.company-date, .institution-date, .project-company {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+.project-company {
+    font-weight: bold;
+}
+
+/* Footer */
+#main-footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#main-footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar .container {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    #navbar .logo a {
+        margin-bottom: 0.5rem;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        width: 100%;
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        border-top: 1px solid #444; /* Separator for mobile nav links */
+    }
+    #navbar ul li:first-child a {
+        border-top: none;
+    }
+
+
+    .hero-section {
+        height: auto;
+        min-height: 50vh;
+        padding: 3rem 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills on smaller screens */
+    }
+
+    .content-section {
+        padding: 2.5rem 0;
+    }
+}
